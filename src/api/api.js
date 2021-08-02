@@ -4,7 +4,7 @@
 //     var numOfArticlesArray = fetchNewsPreprocessing(data)
 
 //     data.map( async (interest, index) => {
-//         const url = `https://newsapi.org/v2/top-headlines?country=us&category=${interest}&apiKey=388f2f556efd48f29dce0f6eb01cf3bd`
+//         const url = `https://newsapi.org/v2/top-headlines?country=us&category=${interest}&apiKey=`
 
 //         try {
 
@@ -49,7 +49,7 @@ export async function fetchNews(data) {
 
         try {
 
-            const url = `https://newsapi.org/v2/top-headlines?country=us&category=${interest}&apiKey=388f2f556efd48f29dce0f6eb01cf3bd`;
+            const url = `https://newsapi.org/v2/top-headlines?country=us&category=${interest}&apiKey=`;
 
             const res = await fetch(url).then(res => {
 
